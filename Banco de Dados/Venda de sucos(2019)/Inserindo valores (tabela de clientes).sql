@@ -1,0 +1,19 @@
+INSERT INTO [TABELA DE CLIENTES]
+([CPF], 
+[NOME], 
+[ENDEREÇO1], 
+[ENDERECO2], 
+[BAIRRO], 
+[CIDADE],
+[ESTADO],
+[CEP],
+[DATA DE NASCIMENTO],
+[IDADE],
+[SEXO],
+[LIMITE DE CREDITO],
+[VOLUME DE COMPRA],
+[PRIMEIRA COMPRA])
+VALUES
+('12345678910', 'Frederico Kiko', 'Vila do Chaves', 'Número 14',
+'Chaves Del Ocho', 'Cidade Trolagem', 'CT', '01234567', '1935-12-31', 80,
+'M', 100000.000, 10000.00, 1)

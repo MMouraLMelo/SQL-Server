@@ -1,0 +1,39 @@
+INSERT INTO [TABELA DE PRODUTOS]
+([CODIGO DO PRODUTO],
+[NOME DO PRODUTO],
+[EMBALAGEM],
+[TAMANHO],
+[SABOR],
+[PRECO DE LISTA])
+VALUES
+('1040107','Light - 350 ml - Melância','Lata','350 ml','Melância',4.56),
+('1037797','Clean - 2 litros - Laranja','PET','2 litros','Laranja',16.01),
+('1000889','Sabor da Montanha - 700 ml - Uva','Garrafa','700 ml','Uva',6.31),
+('0544931','Frescor de Verão - 350 ml - Limão','PET','Limão','350 ml',3.28),
+('1078680','Frescor de Verão - 470 ml - Manga','Lata', '470 ml','Manga',5.18)
+INSERT INTO [TABELA DE PRODUTOS]
+([CODIGO DO PRODUTO],
+[NOME DO PRODUTO],
+[EMBALAGEM],
+[TAMANHO],
+[SABOR],
+[PRECO DE LISTA])
+VALUES
+('788975','Pedaços de Frutas - 1,5 litros - Maçã','PET','1,5 litros','Maçã',18.01),
+('1002767','Videira do Campo - 700 ml - Limão/Maçã','Garrafa','700 ml','Limão/Maçã',8.41)
+
+UPDATE [TABELA DE PRODUTOS]
+SET [EMBALAGEM] = 'Lata', 
+[PRECO DE LISTA] = 2.46 
+WHERE [CODIGO DO PRODUTO] = '0544931'
+
+DELETE FROM [TABELA DE PRODUTOS]
+WHERE [CODIGO DO PRODUTO] = '788975'
+
+ALTER TABLE [TABELA DE PRODUTOS]
+ALTER COLUMN [CODIGO DO PRODUTO]
+VARCHAR (20) NOT NULL;
+
+ALTER TABLE [TABELA DE PRODUTOS]
+ADD CONSTRAINT PK_TABELA_DE_PRODUTOS
+PRIMARY KEY CLUSTERED ([CODIGO DO PRODUTO])
